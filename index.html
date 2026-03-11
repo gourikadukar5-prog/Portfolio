@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gouri Kadukar | Software Developer</title>
+    <meta name="description"
+        content="Software Developer portfolio of Gouri Kadukar — crafting elegant code and impactful digital experiences." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">GK</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link" data-section="home">~/home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">~/about</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">~/skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">~/projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">~/contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">gouri@dev:~</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command" id="typed-cmd"></span>
+                    </div>
+                    <div class="terminal-output" id="terminal-output"></div>
+                </div>
+            </div>
+
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, World! I'm</p>
+                <h1 class="hero-name">
+                    <span class="name-highlight">Gouri</span> Kadukar
+                </h1>
+                <div class="hero-role">
+                    <span class="role-prefix">// </span>
+                    <span class="role-text" id="role-text"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-bio">
+                    Passionate software developer who turns <code class="inline-code">complex problems</code> into
+                    <code class="inline-code">elegant solutions</code>. I write clean, efficient code and build
+                    impactful digital experiences.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary" id="explore-btn">
+                        <span>&lt;</span> Explore Work <span>/&gt;</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline" id="contact-btn">
+                        <span>./</span>contact.sh
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">3+</span>
+                        <span class="stat-label">// Years Coding</span>
+                    </div>
+                    <div class="stat-divider">|</div>
+                    <div class="stat-item">
+                        <span class="stat-value">20+</span>
+                        <span class="stat-label">// Projects Built</span>
+                    </div>
+                    <div class="stat-divider">|</div>
+                    <div class="stat-item">
+                        <span class="stat-value">10+</span>
+                        <span class="stat-label">// Technologies</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="scroll-text">scroll_down()</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">01.</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-code-block">
+                    <!-- Developer Photo — Coding Theme Card -->
+                    <div class="about-photo-card" id="about-photo-card">
+                        <!-- corner brackets -->
+                        <span class="apc-corner tl"></span>
+                        <span class="apc-corner tr"></span>
+                        <span class="apc-corner bl"></span>
+                        <span class="apc-corner br"></span>
+
+                        <!-- floating code tokens -->
+                        <div class="code-float cf1"><span class="cf-kw">const</span> dev = <span
+                                class="cf-bl">true</span>;</div>
+                        <div class="code-float cf2"><span class="cf-fn">commit</span>(<span
+                                class="cf-st">"ship_it"</span>)</div>
+                        <div class="code-float cf3"><span class="cf-kw">async</span> <span class="cf-fn">build</span>()
+                        </div>
+                        <div class="code-float cf4">git push <span class="cf-st">origin</span></div>
+
+                        <!-- photo frame -->
+                        <div class="ap-frame">
+                            <div class="ap-glow-ring"></div>
+                            <div class="ap-img-wrap">
+                                <img src="WhatsApp Image 2025-12-19 at 6.17.34 PM (1).jpeg"
+                                    alt="Gouri Kadukar — Software Developer" class="ap-img" />
+                                <div class="ap-scanline"></div>
+                                <div class="ap-glitch"></div>
+                            </div>
+                        </div>
+
+                        <!-- terminal status bar -->
+                        <div class="ap-statusbar">
+                            <span class="ap-dot"></span>
+                            <span class="ap-stext">gouri.exe &mdash; running</span>
+                            <span class="ap-ver">v2.0.26</span>
+                        </div>
+                    </div>
+
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="file-tab active">about.js</span>
+                        </div>
+                        <div class="code-content">
+                            <pre class="code-text"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">'Gouri Kadukar'</span>,
+  <span class="code-prop">role</span>: <span class="code-string">'Full-Stack Developer'</span>,
+  <span class="code-prop">location</span>: <span class="code-string">'India 🇮🇳'</span>,
+  <span class="code-prop">passion</span>: <span class="code-string">'Building great software'</span>,
+  <span class="code-prop">education</span>: {
+    <span class="code-prop">degree</span>: <span class="code-string">'B.Tech Computer Science'</span>,
+    <span class="code-prop">status</span>: <span class="code-string">'Graduated'</span>
+  },
+  <span class="code-prop">currentFocus</span>: [
+    <span class="code-string">'Web Development'</span>,
+    <span class="code-string">'System Design'</span>,
+    <span class="code-string">'Open Source'</span>
+  ],
+  <span class="code-prop">funFact</span>: <span class="code-string">'I debug with coffee ☕'</span>,
+  <span class="code-prop">available</span>: <span class="code-bool">true</span>
+};</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        <span class="comment">/** Hello! **/</span><br />
+                        I'm a software developer with a passion for creating clean,
+                        efficient, and user-friendly applications. My journey in tech
+                        started with curiosity about how things work under the hood.
+                    </p>
+                    <p class="about-paragraph">
+                        I specialize in <strong>full-stack web development</strong>,
+                        building scalable backends and beautiful frontends. I love
+                        solving challenging problems and continuously learning new technologies.
+                    </p>
+                    <p class="about-paragraph">
+                        When I'm not coding, you'll find me exploring open-source projects,
+                        contributing to developer communities, and staying up-to-date with
+                        the latest tech trends.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">▶</span>
+                            <span>Clean Code Advocate</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">▶</span>
+                            <span>Open Source Contributor</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">▶</span>
+                            <span>Continuous Learner</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">▶</span>
+                            <span>Team Collaborator</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline download-btn" download>
+                        <span>↓</span> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">02.</span>
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="skills-intro"><span class="comment">// Technologies I work with</span></p>
+            <div class="skills-categories">
+
+                <div class="skill-category">
+                    <h3 class="category-title"><span class="cat-icon">🖥️</span> Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="HTML5">
+                            <div class="skill-icon">📄</div>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="CSS3">
+                            <div class="skill-icon">🎨</div>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="JavaScript">
+                            <div class="skill-icon">⚡</div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="React.js">
+                            <div class="skill-icon">⚛️</div>
+                            <span class="skill-name">React.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title"><span class="cat-icon">⚙️</span> Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="Node.js">
+                            <div class="skill-icon">🟢</div>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="Python">
+                            <div class="skill-icon">🐍</div>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="Express.js">
+                            <div class="skill-icon">🚂</div>
+                            <span class="skill-name">Express.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="Java">
+                            <div class="skill-icon">☕</div>
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title"><span class="cat-icon">🗄️</span> Database & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="MongoDB">
+                            <div class="skill-icon">🍃</div>
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="MySQL">
+                            <div class="skill-icon">🐬</div>
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="Git">
+                            <div class="skill-icon">🔄</div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="Docker">
+                            <div class="skill-icon">🐳</div>
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w:70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">03.</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="projects-intro"><span class="comment">// Things I've built</span></p>
+
+            <div class="projects-grid">
+
+                <div class="project-card" data-index="01">
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <div class="project-icon-wrap">📁</div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="GitHub" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce application with authentication, product management,
+                            cart functionality, and payment integration. Built with React and Node.js.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured" data-index="02">
+                    <div class="project-badge">⭐ Featured</div>
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <div class="project-icon-wrap">📁</div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="GitHub" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">AI Chat Assistant</h3>
+                        <p class="project-description">
+                            An intelligent chatbot powered by machine learning, featuring real-time messaging,
+                            conversation history, and multi-language support with NLP capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-index="03">
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <div class="project-icon-wrap">📁</div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="GitHub" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            A collaborative task manager with real-time updates, drag-and-drop boards,
+                            team workspace, and deadline tracking with email notifications.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-index="04">
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <div class="project-icon-wrap">📁</div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="GitHub" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">
+                            A real-time weather application with interactive maps, 7-day forecasts,
+                            location search, and beautiful data visualizations using Chart.js.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-index="05">
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <div class="project-icon-wrap">📁</div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="GitHub" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">URL Shortener Service</h3>
+                        <p class="project-description">
+                            A high-performance URL shortening service with analytics dashboard,
+                            custom aliases, QR code generation, and click tracking statistics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-index="06">
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <div class="project-icon-wrap">📁</div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="GitHub" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo" aria-label="Live Demo">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Blog Platform</h3>
+                        <p class="project-description">
+                            A feature-rich blogging platform with markdown editor, categories,
+                            tags, SEO optimization, and an admin dashboard for content management.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Vercel</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">04.</span>
+                <h2 class="section-title">Contact</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-heading">
+                        <span class="comment">/** Let's Connect **/</span>
+                    </h3>
+                    <p class="contact-text">
+                        Have a project in mind or want to collaborate?
+                        My inbox is always open. Let's build something amazing together!
+                    </p>
+                    <div class="contact-details">
+                        <a href="mailto:gouri@email.com" class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span class="contact-label">gouri@email.com</span>
+                        </a>
+                        <a href="#" class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <span class="contact-label">linkedin.com/in/gouri-kadukar</span>
+                        </a>
+                        <a href="#" class="contact-item">
+                            <span class="contact-icon">🐙</span>
+                            <span class="contact-label">github.com/gouri-kadukar</span>
+                        </a>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span class="contact-label">India 🇮🇳</span>
+                        </div>
+                    </div>
+                    <div class="availability-badge">
+                        <span class="status-dot"></span>
+                        <span>Available for opportunities</span>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-header">
+                            <span class="form-comment">// Send a message</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="cf-name"><span class="label-keyword">const</span> name
+                                =</label>
+                            <input type="text" id="cf-name" class="form-input" placeholder="&quot;Your Name&quot;"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="cf-email"><span class="label-keyword">const</span> email
+                                =</label>
+                            <input type="email" id="cf-email" class="form-input"
+                                placeholder="&quot;your@email.com&quot;" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="cf-subject"><span class="label-keyword">const</span> subject
+                                =</label>
+                            <input type="text" id="cf-subject" class="form-input"
+                                placeholder="&quot;Project inquiry&quot;" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="cf-message"><span class="label-keyword">const</span> message
+                                =</label>
+                            <textarea id="cf-message" class="form-input form-textarea"
+                                placeholder="&quot;Let's collaborate on...&quot;" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+                            <span class="btn-text">sendMessage()</span>
+                            <span class="btn-loading" style="display:none;">sending...</span>
+                        </button>
+                        <div class="form-success" id="form-success">
+                            ✅ Message sent successfully! I'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">GK</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="social-link" aria-label="GitHub" title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter" title="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.06a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.59z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-code">
+                    <span class="comment">// Designed & built by</span>
+                    <span class="code-keyword"> Gouri Kadukar</span>
+                    <span class="comment"> — © 2024</span>
+                </p>
+                <p class="footer-quote">"Any fool can write code that a computer can understand. Good programmers write
+                    code that humans can understand."</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
