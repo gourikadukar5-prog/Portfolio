@@ -1,5 +1,5 @@
 /* =============================================
-   SAMMRUDHI MEN — PORTFOLIO JS
+   SAMRUDDHI MEN  — PORTFOLIO JS
    Matrix Rain | Typing Effect | Animations
    ============================================= */
 
@@ -103,7 +103,7 @@
   const sequence = [
     {
       cmd: 'whoami',
-      output: '<span style="color:#00ff88">samrauddhi_men</span>',
+      output: '<span style="color:#00ff88">samruddhi_men</span>',
       delay: 800
     },
     {
